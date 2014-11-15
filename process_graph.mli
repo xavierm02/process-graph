@@ -26,3 +26,5 @@ val add_input_node : graph -> ?input_mode:input_mode -> Unix.file_descr -> [`Inp
 val add_output_node : graph -> ?output_mode:output_mode -> Unix.file_descr -> [`Output] node
 
 val (>>) : [`Process | `Repeater | `Input] node -> [`Process | `Repeater | `Output] node -> unit
+
+val run : graph -> unit
